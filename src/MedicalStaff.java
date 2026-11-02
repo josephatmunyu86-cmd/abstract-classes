@@ -1,3 +1,5 @@
+import javax.imageio.stream.FileImageInputStream;
+
 public abstract class MedicalStaff {
     private final String employeeId;
     private final String name;
@@ -16,9 +18,21 @@ public abstract class MedicalStaff {
     public String getDepartment() { return department; }
     public int getWorkingHours() { return workingHours; }
 
-    public void setWorkingHours(int fcy) {
+    public void setWorkingHours(int workingHours) {
         if (workingHours > 0) {
             this.workingHours = workingHours;
         }
     }
+    public void displayStaffInfo() {
+        System.out.println("-----------------------------------");
+        System.out.println("Role        : " + getRole());
+        System.out.println("Employee ID : " + employeeId);
+        System.out.println("Name        : " + name);
+        System.out.println("Department  : " + department);
+        System.out.println("Hours/Week  : " + workingHours);
+    }
+
+    public abstract String getRole();
+
+    public abstract void performPatientCare();                                                                                                                                                                 FileImageInputStream
 }
