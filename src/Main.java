@@ -7,5 +7,10 @@ public class Main {
                 new Pharmacist("P001", "Okello Brian", "Pharmacy", 38, "PH-2041"),
                 new LabTechnician("L001", "Namuli Joan", "Laboratory", 40, "Haematology")
         };
+        System.out.println("===== MUKONO HOSPITAL STAFF REPORT =====");
+        for (MedicalStaff member : staff) {
+            member.displayStaffInfo();
+            member.performPatientCare();
+        }
     }
 }
