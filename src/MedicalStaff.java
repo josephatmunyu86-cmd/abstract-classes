@@ -34,5 +34,5 @@ public abstract class MedicalStaff {
 
     public abstract String getRole();
 
-    public abstract void performPatientCare();                                                                                                                                                                 FileImageInputStream
+    public abstract void performPatientCare();
 }
